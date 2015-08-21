@@ -7,28 +7,8 @@
                         </div>
                     </div>
                     <div class="row-fluid centered">
-                        <ul class="social">
-                            <li>
-                                <a href="">
-                                    <img src="<?php echo get_bloginfo('template_url'); ?>/images/facebook.svg" alt="Facebook" width="52" height="52">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="<?php echo get_bloginfo('template_url'); ?>/images/twitter.svg" alt="Twitter" width="52" height="52">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="<?php echo get_bloginfo('template_url'); ?>/images/linkedin.svg" alt="LinkedIn" width="52" height="52">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="<?php echo get_bloginfo('template_url'); ?>/images/googleplus.svg" alt="Google+" width="52" height="52">
-                                </a>
-                            </li>
-                        </ul>
+<?php echo str_replace('<img src="images/', '<img src="'. get_bloginfo('template_url')  .'/images/',  ($page -> post_content)); ?>
+
                     </div>
                 </div>
             </div>
