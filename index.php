@@ -146,7 +146,7 @@
                     
                     <!-- Menu button, small screen -->
                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <img class="icon-menu" src="images/menu.svg" width="30" height="30" alt="Menu" />
+                        <img class="icon-menu" src="<?php echo get_bloginfo('template_url'); ?>/images/menu.svg" width="30" height="30" alt="Menu" />
                     </button>
                     
                     <!-- Start main navigation -->
