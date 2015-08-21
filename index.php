@@ -47,6 +47,32 @@
                 .banner li { list-style: none; }
                     .banner ul li { float: left; }
         </style>
+
+
+	<script>
+		function Shufflearray(o) {
+			for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+			return o;
+		};
+		function shuffleimages() {
+			console.log("rdy");
+			var images = [];
+			$('.portfolio-wrapper img').each(function() {
+				images.push(this);
+				this.remove();
+			});
+
+			Shufflearray(images);
+			$('.portfolio-wrapper').each(function() {
+                                $(this).append(images.pop(this));
+                        });
+		}
+
+		$( document ).ready(function() {
+			shuffleimages();
+		});
+	</script>
+    
     
     
 	    <script type="text/javascript">
