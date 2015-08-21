@@ -1,10 +1,14 @@
-        <!-- Start about section -->
+<?php
+	//print_r($page);
+?>        
+
+	<!-- Start about section -->
         <div class="section primary-section" id="about">
             <div class="container">
                 <!-- Start title/text section -->
                 <div class="title">
                     <h1>Who we are?</h1>
-                    <p>We’re virtually operating branding and design surgeons and we believe that it shouldn’t be neither difficult nor expensive to get great quality design. At LUA PACK, our mission is to make your business look great. We do this by providing start-ups and small to medium sized businesses with first aid design packs that inspire, influence and engage your target audience – all at a price that doesn’t break the bank.</p>
+                    <p><?php echo htmlentities($page -> post_content); ?></p>
                 </div>
                 <!-- End title/text section -->
                 <!-- Start zoom-in section -->
