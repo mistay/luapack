@@ -35,21 +35,14 @@
                     delay: 3000,              //  The delay between slide animations (in milliseconds)
                     complete: function() {},  //  A function that gets called after every slide animation
                     keys: true,               //  Enable keyboard (left, right) arrow shortcuts
-                    dots: true,               //  Display dot navigation
-                    fluid: true              //  Support responsive design. May break non-responsive designs
+                    dots: false,              //  Display dot navigation
+                    fluid: true               //  Support responsive design. May break non-responsive designs
                 });
-                
-                $('.unslider-arrow').click(function() {
-                    var fn = this.className.split(' ')[1];
-                    
-                    //  Either do unslider.data('unslider').next() or .prev() depending on the className
-                    unslider.data('unslider')[fn]();
-                });
-                
-    
             });
         </script>
         <style>
+            .banner ul { margin: 0px; }
+            .banner { min-height: 300px; }
             .banner { position: relative; overflow: auto; }
                 .banner li { list-style: none; }
                     .banner ul li { float: left; }
