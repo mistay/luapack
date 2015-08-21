@@ -1,7 +1,5 @@
-Lieber Armin,
-hiiiiiilfeeeeee!!! Ich hab mir eine Seite „zusammengebastelt“ aber jetzt steh ich an und komm’ nicht mehr weiter… Und (ich trau’s mich ja fast nicht zu sagen, aber) ich bräucht gaaaaanz viel Hilfe von dir…
-
 1. In den kleinen orangen Bereich unterm Menü sollte ne Slideshow rein. Bzw. soll man zwischen Foto-Slideshow (sowohl automatisch als auch mit Overlay-Buttons) und Video wählen können… Ich hab’s schon auf drei verschiedene Arten probiert, aber ich bekomm’s einfach nicht mehr hin…
+Armin: OK von meiner Seite, bitte testen!
 
 2. Das Menü lässt sich in der mobilen Version nicht ausklappen und sowieso und überhaupt ;)
 
@@ -12,6 +10,7 @@ hiiiiiilfeeeeee!!! Ich hab mir eine Seite „zusammengebastelt“ aber jetzt ste
 5. Es fehlen auch noch die Detailseiten für die Packages (inkl. Kaufoption, e-commerce), aber die hab’ ich noch nicht fertig.
 
 6. Das ganze muss auf WordPress umgemünzt werden…
+Armin: daran arbeite ich als Nächstes
 
 7. Ich bin am Verzweifeln!!! Ich komm nicht weiter und das ist nur eine von zwei Webseiten, die ich fertig bekommen muss… (Aber ich hoffe ja, mir die zweite dann auch aus dieser zusammenstöpseln zu können)
 
