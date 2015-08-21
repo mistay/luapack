@@ -4,16 +4,20 @@ Armin: OK von meiner Seite, bitte testen!
 2. Das Menü lässt sich in der mobilen Version nicht ausklappen und sowieso und überhaupt ;)
 
 3. Wenn man die Bilder im Portfolio jedes Mal beim laden zufällig anordnen könnte, wär’s auch cool…. (JS wenn ich mich nicht täusche)
+Armin: arbeite dran
 
 4. Das E-Mail-Formular ganz unten ist zwar ganz schön geworden, mehr aber auch nicht – da fehlt die Funktion… (PHP wenn ich mich richtig erinnere)
 
 5. Es fehlen auch noch die Detailseiten für die Packages (inkl. Kaufoption, e-commerce), aber die hab’ ich noch nicht fertig.
 
 6. Das ganze muss auf WordPress umgemünzt werden…
-Armin: daran arbeite ich als Nächstes
+Armin: OK von meiner Seite, bitte testen!
 
-7. Ich bin am Verzweifeln!!! Ich komm nicht weiter und das ist nur eine von zwei Webseiten, die ich fertig bekommen muss… (Aber ich hoffe ja, mir die zweite dann auch aus dieser zusammenstöpseln zu können)
+6a. WP: Content laden
+Armin: Content wird nun aus Text geladen, bitte Prüfen ob keine Tippfehler passiert sind
 
-Kannst du mir da weiterhelfen? Hast du noch ein paar Zeitressourcen? Oh Mann, ich weiß, ich verlang’ da viel… Armin, aber bitte echt nur, wenn’s für dich nicht zu viel Aufwand ist…
+6b. WP: Überschriften laden
+Armin: magst du vielleicht selber probieren? Funktioniert genau gleich wie Content nur statt $page -> post_content muss was andres genommen werden, z.B. $page -> post_title ???
 
-Ich schick’ dir mal, was ich hab und dann kannst du dir ja mal mein Code-Chaos anschauen… Und vergiss dabei nicht, dass ich nur 6 Tage lang HTML/CSS und nur 4 Tage lang JS in der Uni hatte… Da bin ich froh, wenn ich mir aus diversen Codeschnipseln, was zusammenkopieren und abwandeln kann ;)
+6c. WP: Slider Images
+Armin: da müssma kurz reden was da zu tun ist
