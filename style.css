@@ -503,6 +503,7 @@ p {
 	}
 	
 	.portfolio .label {
+		left: 0;
 		position: absolute;
 		width: 100%;
 		height:40px;
