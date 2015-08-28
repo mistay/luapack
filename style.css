@@ -679,13 +679,81 @@ p {
     color:#fff;
 }
 
+/* armin fonts */
+
+@font-face {
+    font-family: 'brandon_grotesque_regularRg';
+    src: url('brandon_reg-webfont.eot');
+    src: url('brandon_reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('brandon_reg-webfont.woff2') format('woff2'),
+         url('brandon_reg-webfont.woff') format('woff'),
+         url('brandon_reg-webfont.ttf') format('truetype'),
+         url('brandon_reg-webfont.svg#brandon_grotesque_regularRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'brandon_grotesqueRgIt';
+    src: url('brandon_reg_it-webfont.eot');
+    src: url('brandon_reg_it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('brandon_reg_it-webfont.woff2') format('woff2'),
+         url('brandon_reg_it-webfont.woff') format('woff'),
+         url('brandon_reg_it-webfont.ttf') format('truetype'),
+         url('brandon_reg_it-webfont.svg#brandon_grotesqueRgIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'brandon_grotesquebold_italic';
+    src: url('brandon_bld_it-webfont.eot');
+    src: url('brandon_bld_it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('brandon_bld_it-webfont.woff2') format('woff2'),
+         url('brandon_bld_it-webfont.woff') format('woff'),
+         url('brandon_bld_it-webfont.ttf') format('truetype'),
+         url('brandon_bld_it-webfont.svg#brandon_grotesquebold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'brandon_grotesquebold';
+    src: url('brandon_bld-webfont.eot');
+    src: url('brandon_bld-webfont.eot?#iefix') format('embedded-opentype'),
+         url('brandon_bld-webfont.woff2') format('woff2'),
+         url('brandon_bld-webfont.woff') format('woff'),
+         url('brandon_bld-webfont.ttf') format('truetype'),
+         url('brandon_bld-webfont.svg#brandon_grotesquebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 /*
 3.6 Contact7 (armin)
 */
 .wpcf7-form p {
 	color: black;
 	padding: 0px;
+	text-align: left;
 }
+.wpcf7-form span {
+}
+
 .wpcf7-form input {
 	color: #2e394a;
 	width: 100%;
@@ -701,7 +769,16 @@ p {
 	color: white;
 }
 .screen-reader-response {
-	color: #2e394a;
+	color: #e3774c;
+	padding-bottom: 60px;
+	font-weight: bold;
+}
+.screen-reader-response ul {
+	display: none;
+}
+.wpcf7-not-valid-tip {
+	color: #e3774c;
+	
 }
 
 /*
