@@ -680,6 +680,31 @@ p {
 }
 
 /*
+3.6 Contact7 (armin)
+*/
+.wpcf7-form p {
+	color: black;
+	padding: 0px;
+}
+.wpcf7-form input {
+	color: #2e394a;
+	width: 100%;
+}
+.wpcf7-form textarea {
+	width: 100%;
+}
+#send-mail {
+	width: auto;
+	color: #e3774c;
+}
+#send-mail:hover {
+	color: white;
+}
+.screen-reader-response {
+	color: #2e394a;
+}
+
+/*
 4 RESPONSIVE
 ********************************************************************/
  @media (min-width: 1200px) {
