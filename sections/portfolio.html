@@ -33,7 +33,7 @@
                 ?>
 	                        <div class="portfolio logo" data-cat="logo">
 		                      <div class="portfolio-wrapper">				
-			                     <img src="<?php echo  wp_get_attachment_url( $attachment->ID ); ?>" alt="" />
+			                     <img src="<?php $img = wp_get_attachment_image_src( $attachment->ID, 'medium' ); echo $img[0] ?>" alt="" />
 			                        <div class="label">
 				                    <div class="label-text">
 					                    <a class="text-title"><?php echo $attachment->post_content; ?></a>
