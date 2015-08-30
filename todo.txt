@@ -2,7 +2,15 @@
 Armin: -DONE-
 
 2. Das Menü lässt sich in der mobilen Version nicht ausklappen und sowieso und überhaupt ;)
-Armin: funktioniert bei mir sowohl mobil als auch am desktop aba die positionen sind ned schoen (woa hinhupft, stimmt nur ungefaehr).
+mittlerweile OK, aber wenn browser sehr sehr breit wird, wird menu linksbuendig angezeigt und nicht innerhalb eines 1200px?? containers
+
+2a.
+menu: font: nicht bold mobil
+menu: radius mobil: keinen radius
+menu mobil: alles weiß
+menu hover: nur rahmen, kein grau
+menu: burger: orange wenn aktiv, sonst durchsichtig
+menu: vertikal zentrieren in menzzeile .navbar .btn-navbar:hover, .navbar .btn-navbar, margin-top: 30px; 
 
 3. Wenn man die Bilder im Portfolio jedes Mal beim laden zufällig anordnen könnte, wär’s auch cool…. (JS wenn ich mich nicht täusche)
 Armin: willst das wirklich durchmischen? du hast ja einen bezug (filter) auf kategorien ...?!
@@ -27,3 +35,7 @@ Armin: -DONE-
 
 7. pakete/preise: einstellbar via wp machen
 
+
+filter: all geht nimma
+
+slider: ueberschrift zentrieren
