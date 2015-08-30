@@ -1,3 +1,26 @@
+<?php
+function buynowbutton($name, $price) {
+?>
+<form style="margin-bottom: 0px;" method="post" action="https://www.paypal.com/cgi-bin/webscr" target="_blank">
+<input type="hidden" value="_xclick" name="cmd">
+<input type="hidden" value="info@luapack.com" name="business">
+<input type="hidden" value="AT" name="lc">
+<input type="hidden" value="Luapack" name="item_name">
+<input type="hidden" value="<?php echo $name; ?>" name="item_number">
+<input type="hidden" value="<?php echo $price; ?>" name="amount">
+<input type="hidden" value="EUR" name="currency_code">
+<input type="hidden" value="services" name="button_subtype">
+<input type="hidden" value="0" name="no_note">
+<input type="hidden" value="20.000" name="tax_rate">
+<input type="hidden" value="0.00" name="shipping">
+<input type="hidden" value="PP-BuyNowBF:btn_paynow_SM.gif:NonHostedGuest" name="bn">
+<a class="button button-ps" onclick="this.parentElement.submit()">BUY NOW</a>
+<img width="1" border="0" height="1" src="https://www.paypal.com/de_DE/i/scr/pixel.gif" alt="">
+</form>
+<?php
+}
+?>
+?>
                <!-- Packs section start -->
         <div id="packs" class="section secondary-section">
             <div class="container">
@@ -14,7 +37,7 @@
                             <li>Claim</li>
                             <li>Logo Animation</li>
                         </ul>
-                        <a href="#" class="button button-ps">DETAILS</a>
+			<?php echo buynowbutton("Placebo", "890"); ?>
                     </div>
                     <div class="span3 packs-column">
                         <h3>Cough Candy</h3>
@@ -24,7 +47,7 @@
                             <li>Brand Manual</li>
                             <li>Stationery</li>
                         </ul>
-                        <a href="#" class="button button-ps">DETAILS</a>
+			<?php echo buynowbutton("Placebo+", "1590"); ?>
                     </div>
                     <div class="span3 packs-column">
                         <h3>Power Shot</h3>
@@ -34,7 +57,7 @@
                             <li>Folder</li>
                             <li>Broschures</li>
                         </ul>
-                        <a href="#" class="button button-ps">DETAILS</a>
+			<?php echo buynowbutton("Cough Candy++", "2990"); ?>
                     </div>
                     <div class="span3 packs-column">
                         <h3>Miracle Drug</h3>
@@ -44,7 +67,7 @@
                             <li>Website</li>
                             <li>Social Media</li>
                         </ul>
-                        <a href="#" class="button button-ps">DETAILS</a>
+			<?php echo buynowbutton("Power Shot+", "4990"); ?>
                     </div>
                 </div>
                 <div class="centered">
