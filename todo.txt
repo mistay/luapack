@@ -2,22 +2,25 @@
 Armin: OK von meiner Seite, bitte testen!
 
 2. Das Menü lässt sich in der mobilen Version nicht ausklappen und sowieso und überhaupt ;)
+Armin: funktioniert bei mir sowohl mobil als auch am desktop aba die positionen sind ned schoen (woa hinhupft, stimmt nur ungefaehr).
 
 3. Wenn man die Bilder im Portfolio jedes Mal beim laden zufällig anordnen könnte, wär’s auch cool…. (JS wenn ich mich nicht täusche)
-Armin: arbeite dran
+Armin: willst das wirklich durchmischen? du hast ja einen bezug (filter) auf kategorien ...?!
 
 4. Das E-Mail-Formular ganz unten ist zwar ganz schön geworden, mehr aber auch nicht – da fehlt die Funktion… (PHP wenn ich mich richtig erinnere)
+Armin: denk das is soweit fertig. nur das runterhüpfen im fehlerfall is wieder nur ungefaehr (wie 2.)
 
 5. Es fehlen auch noch die Detailseiten für die Packages (inkl. Kaufoption, e-commerce), aber die hab’ ich noch nicht fertig.
+Armin: mein Vorschlag: einfach Paypal Button hinklatschen, machma das so?
 
 6. Das ganze muss auf WordPress umgemünzt werden…
-Armin: OK von meiner Seite, bitte testen!
+Armin: -DONE-
 
 6a. WP: Content laden
-Armin: Content wird nun aus Text geladen, bitte Prüfen ob keine Tippfehler passiert sind
+Armin: -DONE-
 
 6b. WP: Überschriften laden
-Armin: magst du vielleicht selber probieren? Funktioniert genau gleich wie Content nur statt $page -> post_content muss was andres genommen werden, z.B. $page -> post_title ???
+Armin: -DONE-
 
 6c. WP: Slider Images
-Armin: da müssma kurz reden was da zu tun ist
+Armin: -DONE-
