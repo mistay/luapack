@@ -753,6 +753,18 @@ body {
 /*
 3.6 Contact7 (armin)
 */
+
+/* change to border-box layout to keep input fields within formular, see https://css-tricks.com/box-sizing/ */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
 .wpcf7-form p {
 	color: black;
 	padding: 0px;
