@@ -24,3 +24,6 @@ Armin: -DONE-
 
 6c. WP: Slider Images
 Armin: -DONE-
+
+7. pakete/preise: einstellbar via wp machen
+
