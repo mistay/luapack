@@ -683,12 +683,12 @@ p {
 
 @font-face {
     font-family: 'brandon_grotesque_regularRg';
-    src: url('brandon/brandon_reg_reg-webfont.eot');
-    src: url('brandon/brandon_reg_reg-webfont.eot?#iefix') format('embedded-opentype'),
-         url('brandon/brandon_reg_reg-webfont.woff2') format('woff2'),
-         url('brandon/brandon_reg_reg-webfont.woff') format('woff'),
-         url('brandon/brandon_reg_reg-webfont.ttf') format('truetype'),
-         url('brandon/brandon_reg_reg-webfont.svg#brandon_grotesque_regularRg') format('svg');
+    src: url('brandon/brandon_reg-webfont.eot');
+    src: url('brandon/brandon_reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('brandon/brandon_reg-webfont.woff2') format('woff2'),
+         url('brandon/brandon_reg-webfont.woff') format('woff'),
+         url('brandon/brandon_reg-webfont.ttf') format('truetype'),
+         url('brandon/brandon_reg-webfont.svg#brandon_grotesque_regularRg') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -699,12 +699,12 @@ p {
 
 @font-face {
     font-family: 'brandon_grotesqueRgIt';
-    src: url('brandon/brandon_reg_reg_it-webfont.eot');
-    src: url('brandon/brandon_reg_reg_it-webfont.eot?#iefix') format('embedded-opentype'),
-         url('brandon/brandon_reg_reg_it-webfont.woff2') format('woff2'),
-         url('brandon/brandon_reg_reg_it-webfont.woff') format('woff'),
-         url('brandon/brandon_reg_reg_it-webfont.ttf') format('truetype'),
-         url('brandon/brandon_reg_reg_it-webfont.svg#brandon_grotesqueRgIt') format('svg');
+    src: url('brandon/brandon_reg_it-webfont.eot');
+    src: url('brandon/brandon_reg_it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('brandon/brandon_reg_it-webfont.woff2') format('woff2'),
+         url('brandon/brandon_reg_it-webfont.woff') format('woff'),
+         url('brandon/brandon_reg_it-webfont.ttf') format('truetype'),
+         url('brandon/brandon_reg_it-webfont.svg#brandon_grotesqueRgIt') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -751,6 +751,10 @@ p {
 	padding: 0px;
 	text-align: left;
 }
+
+#lua-submit {
+	text-align: center;
+}
 .wpcf7-form span {
 }
 
@@ -772,14 +776,21 @@ p {
 	color: #e3774c;
 	padding-bottom: 60px;
 	font-weight: bold;
-	font: 'brandon_grotesque_regularRg';
 }
+
+div[role=alert], span[role=alert] {
+	font-family: 'brandon_grotesque_regularRg';
+}
+
 .screen-reader-response ul {
 	display: none;
 }
 .wpcf7-not-valid-tip {
 	color: #e3774c;
 	
+}
+.wpcf7 input, .wpcf7 textarea {
+	margin-bottom: 0px;
 }
 
 /*
