@@ -1,30 +1,29 @@
         <div>
-
            <!-- Start slider (or video or flash animation) -->
            <div class="banner">
                <ul>
-                    <li style="background-image: url(<?php echo get_bloginfo('template_url'); ?>/slider-images/sunset.jpg);">
-                        <h1>And slides, and slides, and slides.</h1>
-                        <p>No fancy effects or unnecessary markup, and it’s less than 3kb.</p>
-                    </li>
+		<?php
+		$args = array(          
+			'order' => 'ASC',
+			'post_mime_type' => 'image',
+			'post_parent' => $postID,
+			'post_status' => null,
+			'post_type' => 'attachment',
+		);              
+			    
+		$attachments = get_children( $args );
 
-                    <li style="background-image: url(<?php echo get_bloginfo('template_url'); ?>/slider-images/wood.jpg);">
-                        <h1>Fluid, flexible, fantastically minimal.</h1>
-                        <p>Use any HTML in your slides, extend with CSS. You have full control.</p>
-                    </li>
+		foreach ( $attachments as $attachment ) {
+			//print_r($attachment);
+			if(strpos($attachment->post_title, 'slider_') ===false) continue;
+		?>
 
-                    <li style="background-image: url(<?php echo get_bloginfo('template_url'); ?>/slider-images/subway.jpg);">
-                        <h1>Open-source.</h1>
-                        <p>Everything to do with Unslider is hosted on GitHub.</p>
+                    <li style="background-image: url(<?php echo  wp_get_attachment_url( $attachment->ID ); ?>)">
+                        <h1><?php echo $attachment->post_excerpt; ?></h1>
+                        <p><?php echo $attachment->post_content; ?></p>
                     </li>
-
-                    <li style="background-image: url(<?php echo get_bloginfo('template_url'); ?>/slider-images/shop.jpg);">
-                        <h1>Uh, that’s about it.</h1>
-                        <p>I just wanted to show you another slide.</p>
-                    </li>
+		<?php } ?>
                 </ul>
             </div>
             <!-- End slider (or video or flash animation) -->
-
         </div>
-
