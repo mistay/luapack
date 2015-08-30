@@ -1,5 +1,5 @@
 1. In den kleinen orangen Bereich unterm Menü sollte ne Slideshow rein. Bzw. soll man zwischen Foto-Slideshow (sowohl automatisch als auch mit Overlay-Buttons) und Video wählen können… Ich hab’s schon auf drei verschiedene Arten probiert, aber ich bekomm’s einfach nicht mehr hin…
-Armin: OK von meiner Seite, bitte testen!
+Armin: -DONE-
 
 2. Das Menü lässt sich in der mobilen Version nicht ausklappen und sowieso und überhaupt ;)
 Armin: funktioniert bei mir sowohl mobil als auch am desktop aba die positionen sind ned schoen (woa hinhupft, stimmt nur ungefaehr).
@@ -11,7 +11,7 @@ Armin: willst das wirklich durchmischen? du hast ja einen bezug (filter) auf kat
 Armin: denk das is soweit fertig. nur das runterhüpfen im fehlerfall is wieder nur ungefaehr (wie 2.)
 
 5. Es fehlen auch noch die Detailseiten für die Packages (inkl. Kaufoption, e-commerce), aber die hab’ ich noch nicht fertig.
-Armin: mein Vorschlag: einfach Paypal Button hinklatschen, machma das so?
+Armin: -DONE-
 
 6. Das ganze muss auf WordPress umgemünzt werden…
 Armin: -DONE-
