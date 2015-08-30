@@ -5,7 +5,6 @@
     <head>
         <meta charset=utf-8>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="<?php echo get_bloginfo('template_url'); ?>/style.css" rel="stylesheet">
 
         <title>LUA PACK - Choose the perfect dose</title>
         
