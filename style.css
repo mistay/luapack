@@ -742,6 +742,13 @@ p {
 
 }
 
+/* overwrite bootstap */
+
+/* white padding in mobile view */
+body {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
 
 /*
 3.6 Contact7 (armin)
