@@ -1,6 +1,6 @@
 <?php
 /*
-  Template Name: luapack
+  Template Name: lualab
  */
 ?>
 <!DOCTYPE html>
@@ -11,7 +11,7 @@
         <meta charset=utf-8>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>LUA PACK - Choose the perfect dose</title>
+        <title><?php echo get_the_title(); ?></title>
         
         <!-- Load Arvo font -->
         <link href='http://fonts.googleapis.com/css?family=Arvo:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -169,44 +169,19 @@
             </div>
         </div>
 
-
 <?php
-
-        $args = array(
-                'sort_order' => 'asc',
-                'sort_column' => 'menu_order',
-                'hierarchical' => 1,
-                'exclude' => '',
-                'include' => '',
-                'meta_key' => '',
-                'meta_value' => '',
-                'authors' => '',
-                'child_of' => 0,
-                'parent' => -1,
-                'exclude_tree' => '',
-                'number' => '',
-                'offset' => 0,
-                'post_type' => 'page',
-                'post_status' => 'publish'
-        );
-
-        $pages = get_pages($args);
-        foreach ($pages as $page) {
-
-                $filename = get_theme_root() . "/lua/sections/" . $page -> post_name . ".html"; // e.g. /web/vhosts/.../luapack/sections/slider.html
-
-                if (file_exists($filename)) {
-                        include($filename);
-                }
-        }
+	while ( have_posts() ) {
+		the_post(); 
+		print get_the_content(); 
+	}
 ?>
 
-        
+
         
         
         <!-- Footer section start -->
         <div class="footer">
-            <p>&copy; 2015 by <a href="http://www.luapack.com">LUA PACK</a> – Choose the perfect dose.</p>
+            <p>&copy; 2015 by <a href="http://www.lualab.com">LUA LAB</a> – Choose the perfect dose.</p>
         </div>
         <!-- Footer section end -->
         <!-- ScrollUp button start -->
