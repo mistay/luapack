@@ -89,10 +89,22 @@ p {
     background: #2e394a;
     color: #fff;
 }
-.navbar .btn-navbar:hover, .navbar .btn-navbar {
-    border-radius:0;
-    background:#e3774c;
+
+.navbar .btn-navbar {
+    margin-top: 30px;
     color: #000;
+    border-radius:0;
+    background-color: transparent;
+	background-image: none;
+	border: 1px solid #e3774c;
+}
+.navbar .btn-navbar:hover {
+    background-color:#e3774c;
+}
+
+.btn.btn-navbar.collapsed {
+	background-color:#e3774c;
+
 }
 
 
