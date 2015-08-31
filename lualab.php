@@ -145,7 +145,7 @@
                    
                    <!-- Logo -->
                     <a href="#" class="brand">
-                        <img src="<?php echo get_bloginfo('template_url'); ?>/images/logo.svg" width="80" height="80" alt="Logo" />
+                        <img src="<?php echo get_bloginfo('template_url'); ?>/images/logo_lualab.svg" width="80" height="80" alt="Logo" />
                     </a>
                     
                     <!-- Menu button, small screen -->
@@ -156,26 +156,50 @@
                     <!-- Start main navigation -->
                     <div class="nav-collapse collapse pull-right">
                         <ul class="nav" id="top-navigation">
-                            <li class="active"><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#packs">Packs</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#contact">Contact</a></li>
+
+
+<?php
+// query all pages that are derived from lualab template
+$pages = get_pages(array(
+	'meta_key' => '_wp_page_template',
+	'meta_value' => 'lualab.php',
+	'sort_column' => 'menu_order', 
+  	'sort_order' => 'ASC', 
+
+));
+foreach ($pages as $page) {
+	echo "<li><a href='" . ($page->guid) . "'>" . ($page->post_name) . "</a></li>";
+
+}
+
+?>
+
                         </ul>
                     </div>
+
                     <!-- End main navigation -->
                     
                 </div>
             </div>
         </div>
-
+<div class="section primary-section">
 <?php
-	while ( have_posts() ) {
-		the_post(); 
-		print get_the_content(); 
-	}
-?>
+	$this_page_id=$wp_query->post->ID;
+	 while ( have_posts() ) {
+                the_post(); 
+                print "<h1>" . get_the_title() . "</h1>";
+		echo get_the_content();
+		if ($this_page_id == 26)
+			echo do_shortcode('[contact-form-7 id="55" title="Contact form 1"]'); 
 
+	}
+	$children = query_posts(array('showposts' => 20, 'post_parent' => $this_page_id, 'post_type' => 'page'));
+	foreach ($children as $child) {
+                echo "<h2>" . $child->post_title . "<h2>";
+                echo "<div class='childcontent'>" . $child->post_content . "</div>";
+        }
+?>
+</div>
 
         
         
