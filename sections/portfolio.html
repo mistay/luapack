@@ -7,11 +7,11 @@
                 </div>
                    
                 <ul id="filters" class="clearfix">
-	                        <li><span class="filter active" data-filter="logo identity editorial web">ALL</span></li>
-	                        <li><span class="filter" data-filter="logo">LOGO</span></li>
-	                        <li><span class="filter" data-filter="identity">IDENTITY</span></li>
-	                        <li><span class="filter" data-filter="editorial">EDITORIAL</span></li>
-	                        <li><span class="filter" data-filter="web">WEB</span></li>
+	                        <li><span class="filter active" data-filter="Logo Identity Editorial Web">ALL</span></li>
+	                        <li><span class="filter" data-filter="Logo">LOGO</span></li>
+	                        <li><span class="filter" data-filter="Identity">IDENTITY</span></li>
+	                        <li><span class="filter" data-filter="Editorial">EDITORIAL</span></li>
+	                        <li><span class="filter" data-filter="Web">WEB</span></li>
                 </ul>
                     
                 <div id="portfoliolist">		
@@ -31,7 +31,7 @@
                         //print_r($attachment);
                         if(strpos($attachment->post_title, 'portfolio_') ===false) continue;
                 ?>
-	                        <div class="portfolio logo" data-cat="logo">
+	                        <div class="portfolio <?php echo $attachment->post_excerpt; ?>" data-cat="<?php echo $attachment->post_excerpt; ?>">
 		                      <div class="portfolio-wrapper">				
 			                     <img src="<?php $img = wp_get_attachment_image_src( $attachment->ID, 'medium' ); echo $img[0] ?>" alt="" />
 			                        <div class="label">
