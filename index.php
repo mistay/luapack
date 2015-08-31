@@ -41,7 +41,7 @@
         </script>
         <style>
             .banner ul { margin: 0px; }
-            .banner li { min-height: 300px; }
+            .banner li { min-height: 600px; }
             .banner { position: relative; overflow: auto; }
                 .banner li { list-style: none; }
                     .banner ul li { float: left; }
