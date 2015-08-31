@@ -2,7 +2,7 @@
 Armin: -DONE-
 
 2. Das Menü lässt sich in der mobilen Version nicht ausklappen und sowieso und überhaupt ;)
-mittlerweile OK, aber wenn browser sehr sehr breit wird, wird menu linksbuendig angezeigt und nicht innerhalb eines 1200px?? containers
+-DONE-
 
 2a.
 menu: font: nicht bold mobil
@@ -11,6 +11,7 @@ menu mobil: alles weiß
 menu hover: nur rahmen, kein grau
 menu: burger: orange wenn aktiv, sonst durchsichtig
 menu: vertikal zentrieren in menzzeile .navbar .btn-navbar:hover, .navbar .btn-navbar, margin-top: 30px; 
+-DONE-
 
 3. Wenn man die Bilder im Portfolio jedes Mal beim laden zufällig anordnen könnte, wär’s auch cool…. (JS wenn ich mich nicht täusche)
 Armin: willst das wirklich durchmischen? du hast ja einen bezug (filter) auf kategorien ...?!
@@ -37,5 +38,7 @@ Armin: -DONE-
 
 
 filter: all geht nimma
+-DONE-
 
 slider: ueberschrift zentrieren
+duhuu armin, noch a frage.. wär’s zum jetzigen zeitpunkt a großer aufwand, des slider-plugin gegen a anderes (owl-carousel z.b. oder welches du auch immer für geeignet hältst) zu tauschen? aber sag ehrlich, wenn des voll die hakke is, bringt’s natürlich auch nix… aber der slider is unkontrollierbar – in der mobilen version sieht man / erkennt man halt gar nix mehr von den Bildern..
