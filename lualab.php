@@ -168,8 +168,10 @@ $pages = get_pages(array(
   	'sort_order' => 'ASC', 
 
 ));
+	$this_page_id=$wp_query->post->ID;
 foreach ($pages as $page) {
-	echo "<li><a href='" . ($page->guid) . "'>" . ($page->post_name) . "</a></li>";
+	$active = $this_page_id == $page->ID? "active" :"";
+	echo "<li class='$active'><a href='" . ($page->guid) . "'>" .($page->post_name) . "</a></li>";
 
 }
 
@@ -184,7 +186,6 @@ foreach ($pages as $page) {
             </div>
         </div>
 <?php
-	$this_page_id=$wp_query->post->ID;
 	 while ( have_posts() ) {
                 the_post(); 
 //print_r($post);

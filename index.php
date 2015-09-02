@@ -28,7 +28,7 @@
         <script type="text/javascript" src="<?php echo get_bloginfo('template_url'); ?>/js/bootstrap.js"></script>
         <script type="text/javascript" src="<?php echo get_bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="<?php echo get_bloginfo('template_url'); ?>/js/jquery.easing.min.js"></script>	
-	    <script type="text/javascript" src="<?php echo get_bloginfo('template_url'); ?>/js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_bloginfo('template_url'); ?>/js/jquery.mixitup.min.js"></script>
 	
 	   
 	    <script type="text/javascript" src="<?php echo get_bloginfo('template_url'); ?>/unslider/unslider.min.js"></script>
@@ -51,6 +51,16 @@
                 .banner li { list-style: none; }
                     .banner ul li { float: left; }
         </style>
+
+	<script>
+		$(document).ready(function() {
+			$("#top-navigation li").click(function() {
+				console.log("click on li");
+				$("#top-navigation li").removeClass("active");
+				$(this).addClass("active");
+			});
+		});
+	</script>
 
 
 	<script>
