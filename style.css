@@ -771,6 +771,9 @@ body {
 	background-color: transparent!important; /*mobile menu: transparent background on hover */
 }
 
+.navbar {
+	border-bottom: 2px solid #e3774c;
+}
 /*
 3.6 Contact7 (armin)
 */

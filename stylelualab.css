@@ -10,6 +10,10 @@
 .btn.btn-navbar{
     border-color: #F5C10A;
 }
+.navbar {
+        border-bottom: 2px solid #F5C10A;
+}
+
 
 
 
