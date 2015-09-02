@@ -42,3 +42,53 @@ filter: all geht nimma
 
 slider: ueberschrift zentrieren
 duhuu armin, noch a frage.. wär’s zum jetzigen zeitpunkt a großer aufwand, des slider-plugin gegen a anderes (owl-carousel z.b. oder welches du auch immer für geeignet hältst) zu tauschen? aber sag ehrlich, wenn des voll die hakke is, bringt’s natürlich auch nix… aber der slider is unkontrollierbar – in der mobilen version sieht man / erkennt man halt gar nix mehr von den Bildern..
+
+
+__________________________________________________________________________________________
+
+
+LUA PACK
+
+menu
+aktiver menüpunkt > oranger rahmen
+
+sections
+überschrift soll nicht abgeschnitten werden, wenn man per menu zur jeweiligen section springt
+
+menu mobile
+font: nicht bold
+font: weiß
+hover: nur rahmen, kein weiß/grau
+
+slider
+responsive (oder anderer)
+bilder sollen zumindest zentriert werden und dann rechts und links beschnitten werden (und nicht linksbündig angeordnet und rechts abgeschnitten)
+bild-überschriften bitte zentrieren
+
+
+
+
+LUA LAB
+
+color
+alles, was in LUA PACK orange ist, soll auf LUA LAB mit gelb überschrieben werden
+
+menu
+bitte eine gelbe Linie (2-3px) and die navbar anhängen (über die volle breite)
+
+sections
+wie kann man sections einfügen, die NUR auf lualab, nicht aber auf luapack zu sehen sind? hab schon ein paar sections vorbereitet…
+
+aufbau/inhalt
+	•	about (sections/who): gelber bg, blaue schrift, bitte unter dem titel-bereich vimeo-video einbetten (editierbar/link)
+	•	offer (sections/offer): blauer bg, weiße schrift
+	•	work (sections/worksamples): gelber bg, blaue schrift
+	•	how-to (sections/how): blauer bg, weiße schrift
+	•	contact (sections/contact): gelber bg, blaue schrift
+
+
+
+HOSTING
+
+wär cool, wenn du im großen finale dann alles auf strato schupfen könntest, damit wir alles so abgeben können, wie es die herrschaften professoren gerne hätten ;) ftp-zuhänge folgen…
+
