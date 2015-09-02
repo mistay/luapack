@@ -21,6 +21,7 @@
         <!-- Load CSS styles -->
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_url'); ?>/css/bootstrap.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_url'); ?>/style.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_url'); ?>/stylelualab.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_url'); ?>/css/bootstrap-responsive.css" />
         
         <!-- Load JS -->
