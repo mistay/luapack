@@ -51,14 +51,18 @@ LUA PACK
 
 menu
 aktiver menüpunkt > oranger rahmen
+-DONE-
 
 sections
 überschrift soll nicht abgeschnitten werden, wenn man per menu zur jeweiligen section springt
 
 menu mobile
 font: nicht bold
+-DONE-
 font: weiß
+-DONE-
 hover: nur rahmen, kein weiß/grau
+-DONE-
 
 slider
 responsive (oder anderer)
@@ -72,12 +76,17 @@ LUA LAB
 
 color
 alles, was in LUA PACK orange ist, soll auf LUA LAB mit gelb überschrieben werden
+-DONE-
 
 menu
 bitte eine gelbe Linie (2-3px) and die navbar anhängen (über die volle breite)
+-DONE-
 
 sections
 wie kann man sections einfügen, die NUR auf lualab, nicht aber auf luapack zu sehen sind? hab schon ein paar sections vorbereitet…
+parent: LUAPACK -> seite wird auf luapack angezeigt
+template: lualab -> seite wird auf lualab angezeigt
+kann beliebig kombiniert werden (garnicht, nur lab, nur pack, beide)
 
 aufbau/inhalt
 	•	about (sections/who): gelber bg, blaue schrift, bitte unter dem titel-bereich vimeo-video einbetten (editierbar/link)
@@ -85,10 +94,18 @@ aufbau/inhalt
 	•	work (sections/worksamples): gelber bg, blaue schrift
 	•	how-to (sections/how): blauer bg, weiße schrift
 	•	contact (sections/contact): gelber bg, blaue schrift
-
+-DONE-
 
 
 HOSTING
 
 wär cool, wenn du im großen finale dann alles auf strato schupfen könntest, damit wir alles so abgeben können, wie es die herrschaften professoren gerne hätten ;) ftp-zuhänge folgen…
+wir brauchen (spätestens donnerstag 3.8. morgen):
+- ftp zugang
 
+- ssh zugang
+  gibts ned
+
+- mysql zugang
+
+- kundenbereich
