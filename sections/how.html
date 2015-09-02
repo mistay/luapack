@@ -1,0 +1,57 @@
+<?php
+	//print_r($page);
+?>        
+
+	<!-- Start how section -->
+        <div class="section primary-section" id="about">
+            <div class="container">
+                <!-- Start title/text section -->
+                <div class="title">
+                    <h1><?php echo htmlentities($page -> post_title); ?></h1>
+                    <p><?php echo htmlentities($page -> post_content); ?></p>
+                </div>
+                <!-- End title/text section -->
+                <!-- Start zoom-in section -->
+                <div class="row-fluid">
+                    <div class="span3">
+                        <div class="centered about">
+                            <div class="zoom-in">
+                                <img class="zoom-in" src="<?php echo get_bloginfo('template_url'); ?>/images/about1.svg" alt="about 1">
+                            </div>
+                            <h3>Contact</h3>
+                            <p>Use our contact form to drop us a line including your contact data and some short information about your project.<br/></p>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="centered about">
+                            <div class="zoom-in">
+                                <img class="zoom-in" src="<?php echo get_bloginfo('template_url'); ?>/images/about2.svg" alt="about 2" />
+                            </div>
+                            <h3>Briefing</h3>
+                            <p>We'll answer you within 24 hours asking you for all the information we need to get started.<br/></p>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="centered about">
+                            <div class="zoom-in">
+                                <img class="zoom-in" src="<?php echo get_bloginfo('template_url'); ?>/images/about3.svg" alt="about 3">
+                            </div>
+                            <h3>Details</h3>
+                            <p>We'll review your requirements and send you a detailed project estimate.<br/></p>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="centered about">
+                            <div class="zoom-in">
+                                <img class="zoom-in" src="<?php echo get_bloginfo('template_url'); ?>/images/about3.svg" alt="about 3">
+                            </div>
+                            <h3>Contract</h3>
+                            <p>As soon as you agree, we'll get started. From now on, you'll have one point of contact from start to finish.<br/></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Start zoom-in section -->
+            </div>
+        </div>
+        <!-- how section end -->
+
