@@ -202,6 +202,7 @@
 
         $pages = get_pages($args);
         foreach ($pages as $page) {
+		if ($page->post_parent != 140)continue;
 
                 $filename = get_theme_root() . "/lua/sections/" . $page -> post_name . ".html"; // e.g. /web/vhosts/.../luapack/sections/slider.html
 
