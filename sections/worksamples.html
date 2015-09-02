@@ -1,0 +1,53 @@
+        <!-- Worksamples section start -->
+        <div id="portfolio" class="section secondary-section">
+            <div class="container">
+                <div class=" title">
+                    <h1><?php echo htmlentities($page -> post_title); ?></h1>
+                    <p><?php echo ($page -> post_content); ?></p>
+                </div>
+                   
+                <ul id="filters" class="clearfix">
+	                        <li><span class="filter active" data-filter="Logo Identity Editorial Web">ALL</span></li>
+	                        <li><span class="filter" data-filter="Logo">LOGO</span></li>
+	                        <li><span class="filter" data-filter="Identity">IDENTITY</span></li>
+	                        <li><span class="filter" data-filter="Editorial">EDITORIAL</span></li>
+	                        <li><span class="filter" data-filter="Web">WEB</span></li>
+                </ul>
+                    
+                <div id="portfoliolist">		
+
+		<?php
+			$args = array(          
+                        'order' => 'ASC',
+                        'post_mime_type' => 'image',
+                        'post_parent' => $postID,
+                        'post_status' => null,
+                        'post_type' => 'attachment',
+                );
+
+                $attachments = get_children( $args );
+
+                foreach ( $attachments as $attachment ) {
+                        //print_r($attachment);
+                        if(strpos($attachment->post_title, 'worksamples_') ===false) continue;
+                ?>
+	                        <div class="portfolio <?php echo $attachment->post_excerpt; ?>" data-cat="<?php echo $attachment->post_excerpt; ?>">
+		                      <div class="portfolio-wrapper">				
+			                     <img src="<?php $img = wp_get_attachment_image_src( $attachment->ID, 'medium' ); echo $img[0] ?>" alt="" />
+			                        <div class="label">
+				                    <div class="label-text">
+					                    <a class="text-title"><?php echo $attachment->post_content; ?></a>
+					                    <span class="text-category"><?php echo $attachment->post_excerpt; ?></span>
+				                    </div>
+				                    <div class="label-bg"></div>
+			                        </div>
+		                        </div>
+	                        </div>
+
+		<?php } ?>
+	                        
+                </div>                        
+            </div>
+        </div>
+        <!-- Worksamples section end -->
+        
