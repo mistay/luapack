@@ -182,24 +182,34 @@ foreach ($pages as $page) {
                 </div>
             </div>
         </div>
-<div class="section primary-section">
 <?php
 	$this_page_id=$wp_query->post->ID;
 	 while ( have_posts() ) {
                 the_post(); 
-                print "<h1>" . get_the_title() . "</h1>";
-		echo get_the_content();
-		if ($this_page_id == 26)
-			echo do_shortcode('[contact-form-7 id="55" title="Contact form 1"]'); 
+//print_r($post);
+		$page = $post;
+
+		$filename = get_theme_root() . "/lua/sections/" . $post -> post_name.  ".html";
+                if (file_exists($filename)) {
+//echo "filename: $filename";
+                        include($filename);
+                }
+
 
 	}
 	$children = query_posts(array('showposts' => 20, 'post_parent' => $this_page_id, 'post_type' => 'page'));
 	foreach ($children as $child) {
-                echo "<h2>" . $child->post_title . "<h2>";
-                echo "<div class='childcontent'>" . $child->post_content . "</div>";
+		$page = $child;
+
+		$filename = get_theme_root() . "/lua/sections/" . $child -> post_name . ".html"; 
+                if (file_exists($filename)) {
+                        include($filename);
+                }
+
+
         }
+
 ?>
-</div>
 
         
         
