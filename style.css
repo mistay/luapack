@@ -762,9 +762,19 @@ body {
 	padding-right: 0px !important;
 }
 
+.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+	color: #ffffff !important; /* white mobile menu */
+	font-weight: normal !important;
+}
+.navbar .nav >  li a:hover
+{
+	background-color: transparent!important; /*mobile menu: transparent background on hover */
+}
+
 /*
 3.6 Contact7 (armin)
 */
+
 
 /* change to border-box layout to keep input fields within formular, see https://css-tricks.com/box-sizing/ */
 
