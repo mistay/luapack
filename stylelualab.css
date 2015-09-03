@@ -1,3 +1,10 @@
+/*
+1 GENERAL
+**********************************************************************/
+
+a:hover {
+    color: #F5C10A;
+}
 .navbar .nav > li:hover> a, .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
     border-color: #F5C10A;
 }
@@ -13,8 +20,67 @@
 .navbar {
         border-bottom: 2px solid #F5C10A;
 }
-
-
-
-
-
+/*
+2.2 Buttons
+**********************************************************************/
+.button-sp, .button-sp:visited, .button-sp:focus {
+    background-color:#F5C10A;
+}
+.button-sp:hover, .button-sp:active {
+    color:#F5C10A;
+}
+.button-ps, .button-ps:visited, .button-ps:focus {
+    color:#F5C10A;
+}
+.button-ps:hover, .button-ps:active {
+    background-color:#F5C10A;
+}
+/*
+3 SECTIONS 
+**********************************************************************/
+.primary-section .triangle {
+    border-top: 40px solid #F5C10A;
+}
+.secondary-section {
+    background:#F5C10A;
+}
+/* Third section use bacground image */
+.third-section {
+    border-top:6px solid #F5C10A;
+}
+.third-section .title {
+    color: #F5C10A;
+}
+/*
+3.2 Packs
+******************************************************************/
+.packs-column h3 {
+    color:#F5C10A;
+}
+/*
+3.3 Portfolio
+********************************************************************/
+.portfolio .label-bg {
+			background: #F5C10A;
+		}
+/*
+3.4 Contact
+********************************************************************/
+ .contact {
+    background: #F5C10A;
+}
+#send-mail {
+	color: #F5C10A;
+}
+.screen-reader-response {
+	color: #F5C10A;
+}
+/*
+3.5 Footer
+********************************************************************/
+.footer a:hover {
+    color: #F5C10A;
+}
+.scrollup {
+    background: #F5C10A;
+}
